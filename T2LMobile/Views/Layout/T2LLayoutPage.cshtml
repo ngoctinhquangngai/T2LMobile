@@ -5,512 +5,640 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @*https://github.com/ngoctinhquangngai/T2LMobile.git*@
-    @*<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>*@
-    <link href="~/Content/T2LCSS/style.css" rel="stylesheet" />
+    <link href="~/Content/T2LCSS/t2lcssmain.css" rel="stylesheet" />
+    @*<link href="~/Content/T2LCSS/lesscss.css" rel="stylesheet" />
+    <link href="~/Content/T2LCSS/t2lcss.css" rel="stylesheet" />*@
+    <link href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/NivoSlider/nivo-slider.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/T2LScript/jquery.openCarousel.js"></script>
-    <script src="~/Scripts/T2LScript/easing.js"></script>
-    <script src="~/Scripts/T2LScript/move-top.js"></script>
+    <script src="~/NivoSlider/jquery.nivo.slider.js"></script>
+    <script src="~/NivoSlider/jquery.nivo.slider.pack.js"></script>
 </head>
 @RenderBody()
 <body>
-    <div class="header">
-        <div class="wrap">
-            <div class="header_top">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" /></a>
-                </div>
-                <div class="header_top_right">
-                    <div class="search_box">
-                        <span>Search</span>
-                        <form>
-                            <input type="text" value=""><input type="submit" value="">
-                        </form>
-                        <div class="clear"></div>
+
+    <section>
+
+        <aside class="homebanner">
+            <div id="slider" class="nivoSlider">
+                <img src="~/Images/1.png" />
+                <img src="~/Images/2.png" />
+                <img src="~/Images/3.png" />
+                <img src="~/Images/4.png" />
+                <img src="~/Images/5.png" />
+                <img src="~/Images/6.png" />
+                <img src="~/Images/7.png" />
+                @*<img src="images/toystory.jpg" data-thumb="images/toystory.jpg" alt="" />
+            <img src="images/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" />
+            <img src="images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+            <img src="images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />*@
+            </div>
+        </aside>
+        <aside class="homenews">
+            <figure>
+                <h2><a href="https://www.t2lmobile.com/tin-tuc">Tin công nghệ</a></h2>
+                <b></b>
+                <a href="https://www.t2lmobile.com/tin-tuc" class="readmore">Đọc thêm</a>
+            </figure>
+            <ul>
+                <li>
+                    <a href="https://www.t2lmobile.com/tin-tuc/galaxy-s7-giam-gia-kich-san-oppo-a77-len-ke-gia-4-3-trieu-982072">
+                        <img width="100" height="70" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/18472014_714401408762561_1944423059_o-_1920x1080-100x100.jpg">
+                        <h3>
+                            Điểm tin HOT 13/5: Galaxy S7 giảm giá kịch sàn, OPPO A77 lên kệ giá 4.3 triệu
+                        </h3>
+                        <span>12 phút trước</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/tin-tuc/chi-trong-ngay-dau-mo-ban-da-co-4-000-may-oppo-f3-den-tay-khach-hang-982069">
+                        <img width="100" height="70" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/hle_3958_800x450-100x100.jpg">
+                        <h3>
+                            Chỉ trong ngày đầu mở bán đã có 4.000 máy OPPO F3 đến tay khách hàng
+                        </h3>
+                        <span>37 phút trước</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/tin-tuc/google-se-dan-khac-phuc-nhuoc-diem-nay-ke-tu-android-o-982041">
+                        <img width="100" height="70" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/android-o-hero_800x450_800x450-100x100.jpg">
+                        <h3>
+                            Thua thiệt iOS khoản cập nhật phần mềm, Google sẽ dần khắc phục nhược điểm này kể từ Android O
+                        </h3>
+                        <span>1 giờ trước</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="twobanner">
+                <a href="https://www.t2lmobile.com/samsung" onclick="jQuery.ajax({ url: &#39;//www.t2lmobile.com/bannertracking?bid=12343&amp;r=&#39;+ (new Date).getTime(),   async: true, cache: false });"><img src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/28_04_2017_10_43_12_Samsung-Trung-88-Trieu-1-195-75.png" alt="2017 - T5 - Samsung Month"></a>
+                <a href="https://www.t2lmobile.com/apple" onclick="jQuery.ajax({ url: &#39;//www.t2lmobile.com/bannertracking?bid=12510&amp;r=&#39;+ (new Date).getTime(),   async: true, cache: false });"><img src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/06_05_2017_10_35_03_iPhone.png" alt="2017 - T5 - Apple Big"></a>
+            </div>
+        </aside>
+        <div class="clr"></div>
+        <!-- home products -->
+
+        <ul class="homeproduct">
+            <li>
+                <a href="https://www.t2lmobile.com/dtdd/samsung-galaxy-s8-plus">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/samsung-galaxy-s8-plus-ft-1-400x400.jpg">
+                    <h3>Samsung Galaxy S8 Plus</h3>
+                    <strong>20.490.000₫</strong>
+                    <label class="new">Mới ra mắt</label>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Samsung Galaxy S8 Plus</span>
+                    <strong>20.490.000₫</strong>
+                    <div class="promotion">
+                        <span>Tặng Gói Bảo hiểm Tai nạn + Luxury Elite</span>
+                        <span>Tặng PMH 500,000đ + Trả góp 0% với chủ thẻ tín dụng ( từ 5/5 - 31/5)</span>
                     </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="navigation">
-                <a class="toggleMenu" href="#">Menu</a>
-                <ul class="nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="test">
-                        <a href="#">Appliances</a>
-                        <ul>
-                            <li>
-                                <a href="#">Cookware</a>
-                                <ul>
-                                    <li><a href="#">Pots & Pans</a></li>
-                                    <li><a href="#">Pressure Cookers</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Storage</a>
-                                <ul>
-                                    <li><a href="#">Bottles & Sippers</a></li>
-                                    <li><a href="#">Containers & Jars</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Cutlery & Tableware</a>
-                                <ul>
-                                    <li><a href="#">Cutlery</a></li>
-                                    <li><a href="#">Condiment Sets</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Bar Accessories</a>
-                                <ul>
-                                    <li><a href="#">Bottle Openers</a></li>
-                                    <li><a href="#">Flasks</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Computers</a>
-                        <ul>
-                            <li>
-                                <a href="#">Laptops</a>
-                                <ul>
-                                    <li><a href="#">HP</a></li>
-                                    <li><a href="#">Lenova</a></li>
-                                    <li><a href="#">Dell</a></li>
-                                    <li><a href="#">All Brands</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Computer Accessories</a>
-                                <ul>
-                                    <li><a href="#">External Hard Disks</a></li>
-                                    <li><a href="#">Pendrives</a></li>
-                                    <li><a href="#">PC Components</a></li>
-                                    <li><a href="#">Computer Peripherals</a></li>
-                                    <li><a href="#">Datacards & Routers</a></li>
-                                    <li><a href="#">Mouse</a></li>
-                                    <li><a href="#">Laptop Skins & Decals</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Health & Beauty</a>
-                        <ul>
-                            <li><a href="#">Bath & Skin Care</a></li>
-                            <li><a href="#">Health & Safety</a></li>
-                            <li><a href="#">Maternity Care</a></li>
-                            <li><a href="#">Body Care Combos</a></li>
+                    <span>Màn hình: 6.2", Quad HD (2K)</span>
+                    <span>HĐH: Android 7.0</span>
+                    <span>CPU: Exynos 8895 8 nhân</span>
+                    <span>RAM: 4 GB, ROM: 64 GB</span>
+                    <span>Camera: 12 MP, Selfie: 8 MP</span>
+                    <span>PIN: 3500 mAh</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;91131&#39;,&#39;42&#39;,&#39;Samsung Galaxy S8 Plus&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/dtdd/oppo-f3">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/oppo-f3-ft-400x400.jpg">
+                    <h3>OPPO F3</h3>
+                    <strong>7.490.000₫</strong>
+                    <label class="installment">Trả góp 0%</label>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">OPPO F3</span>
+                    <strong>7.490.000₫</strong>
+                    <div class="promotion">
+                        <span>Tặng gói bảo hiểm rơi vỡ màn hình (tới 31/5)</span>
+                        <span>Trả góp 0% + Tặng PMH 500,000đ ( từ 13/5 - 14/5)</span>
+                    </div>
+                    <span>Màn hình: 5.5", Full HD</span>
+                    <span>HĐH: Android 6.0 (Marshmallow)</span>
+                    <span>CPU: Mediatek MT6750 8 nhân</span>
+                    <span>RAM: 4 GB, ROM: 64 GB</span>
+                    <span>Camera: 13 MP, Selfie: 16 MP và 8 MP</span>
+                    <span>PIN: 3200 mAh</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;92541&#39;,&#39;42&#39;,&#39;OPPO F3&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/phu-kien-khac/den-led-chup-anh-osmia-ms-001">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/den-led-chup-anh-osmia-ms-001-400x400.png">
+                    <h3>Đèn Led chụp ảnh Osmia MS-001</h3>
+                    <strong>140.000₫</strong>
+                    <span class="hisprice">200.000₫</span>
+                    <label class="shock">Giá sốc</label>
+                    <cite>-30%</cite>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Đèn Led chụp ảnh Osmia MS-001</span>
+                    <strong>140.000₫</strong>
+                    <span>Thiết kế nhỏ gọn, có thể mang theo mọi lúc mọi nơi.</span>
+                    <span>Thoải mái chụp cho mình những bức ảnh chất lượng tốt trong môi trường thiếu sáng.</span>
+                    <span>Có thể điều chỉnh 3 mức sáng khác nhau trên đèn.</span>
+                    <span>Sử dụng 2 viên pin AAA.</span>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/dtdd/iphone-6-32gb-gold">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/iphone-6-32gb-gold-400x400.png" data-original="https://cdn2.tgdd.vn/Products/Images/42/92962/Feature/iphone-6-32gb-gold-400x400.png" class="lazy" style="display: block;">
+                    <h3>iPhone 6 32GB</h3>
+                    <strong>8.990.000₫</strong>
 
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Home & Garden</a>
-                        <ul>
-                            <li>
-                                <a href="#">Home Furnishing</a>
-                                <ul>
-                                    <li><a href="#">Bed</a></li>
-                                    <li><a href="#">Bath</a></li>
-                                    <li><a href="#">Kitchen</a></li>
-                                    <li><a href="#">Living</a></li>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">iPhone 6 32GB</span>
+                    <strong>8.990.000₫</strong>
+                    <div class="promotion">
+                        <span>Cơ hội trúng xe SH 150i khi mua iPhone tại Hà Nội, Đà Nẵng</span>
+                    </div>
+                    <span>Màn hình: 4.7", HD</span>
+                    <span>HĐH: iOS 10</span>
+                    <span>CPU: Apple A8 2 nhân</span>
+                    <span>RAM: 1 GB, ROM: 32 GB</span>
+                    <span>Camera: 8 MP, Selfie: 1.2 MP</span>
+                    <span>PIN: 1810 mAh</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;92962&#39;,&#39;42&#39;,&#39;iPhone 6 32GB&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/dtdd/samsung-galaxy-j7-prime">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/samsung-galaxy-j7-prime-ft-2-400x400.png" data-original="https://cdn3.tgdd.vn/Products/Images/42/84798/Feature/samsung-galaxy-j7-prime-ft-2-400x400.png" class="lazy" style="display: block;">
+                    <h3>Samsung Galaxy J7 Prime</h3>
+                    <strong>5.990.000₫</strong>
+                    <label class="installment">Trả góp 0%</label>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Samsung Galaxy J7 Prime</span>
+                    <strong>5.990.000₫</strong>
+                    <div class="promotion">
+                        <span>Cơ hội trúng 88 triệu mỗi ngày</span>
+                        <span>Tặng Bình giữ nhiệt HOẶC Nón bảo hiểm chỉ áp dụng đơn hàng Online từ ngày 6/5</span>
+                    </div>
+                    <span>Màn hình: 5.5", Full HD</span>
+                    <span>HĐH: Android 6.0 (Marshmallow)</span>
+                    <span>CPU: Exynos 7870 8 nhân</span>
+                    <span>RAM: 3 GB, ROM: 32 GB</span>
+                    <span>Camera: 13 MP, Selfie: 8 MP</span>
+                    <span>PIN: 3300 mAh, SIM: 2 SIM</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;84798&#39;,&#39;42&#39;,&#39;Samsung Galaxy J7 Prime&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/dtdd/galaxy-a5-2017">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/samsung-galaxy-a5-2017-ft-400x400.jpg" data-original="https://cdn3.tgdd.vn/Products/Images/42/88268/Feature/samsung-galaxy-a5-2017-ft-400x400.jpg" class="lazy" style="display: block;">
+                    <h3>Samsung Galaxy A5 (2017)</h3>
+                    <strong>8.990.000₫</strong>
+                    <label class="installment">Trả góp 0%</label>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Samsung Galaxy A5 (2017)</span>
+                    <strong>8.990.000₫</strong>
+                    <div class="promotion">
+                        <span>Tặng PMH 1 triệu + Trả góp 0% + Ưu đãi lên đến 3 triệu khi tham gia "Thu cũ đổi mới"</span>
+                        <span>Cơ hội trúng 88 triệu mỗi ngày</span>
+                    </div>
+                    <span>Màn hình: 5.2", Full HD</span>
+                    <span>HĐH: Android 6.0 (Marshmallow)</span>
+                    <span>CPU: Exynos 7880</span>
+                    <span>RAM: 3 GB, ROM: 32 GB</span>
+                    <span>Camera: 16 MP, Selfie: 16 MP</span>
+                    <span>PIN: 3000 mAh, SIM: 2 SIM</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;88268&#39;,&#39;42&#39;,&#39;Samsung Galaxy A5 (2017)&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/dtdd/sony-xperia-xa1">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/sony-xperia-xa1-g3116-600-277-400x400.png" data-original="https://cdn1.tgdd.vn/Products/Images/42/92081/Feature/sony-xperia-xa1-g3116-600-277-400x400.png" class="lazy" style="display: block;">
+                    <h3>Sony Xperia XA1</h3>
+                    <strong>6.490.000₫</strong>
+                    <label class="installment">Trả góp 0%</label>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Sony Xperia XA1</span>
+                    <strong>6.490.000₫</strong>
+                    <div class="promotion">
+                        <span>Trả góp 0% HOẶC Tặng PMH 500,000đ</span>
+                    </div>
+                    <span>Màn hình: 5.0", HD</span>
+                    <span>HĐH: Android 7.0</span>
+                    <span>CPU: Helio P20, 8 nhân</span>
+                    <span>RAM: 3GB; ROM: 32GB</span>
+                    <span>Camera: 23MP, Selfie: 8MP</span>
+                    <span>PIN: 2300 mAh, SIM: 2 SIM</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;92081&#39;,&#39;42&#39;,&#39;Sony Xperia XA1&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/dtdd/sony-xperia-xzs">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/sony-xperia-xzs-g8232-600-277-400x400.png" data-original="https://cdn2.tgdd.vn/Products/Images/42/92082/Feature/sony-xperia-xzs-g8232-600-277-400x400.png" class="lazy" style="display: block;">
+                    <h3>Sony Xperia XZs</h3>
+                    <strong>14.990.000₫</strong>
+                    <label class="installment">Trả góp 0%</label>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Sony Xperia XZs</span>
+                    <strong>14.990.000₫</strong>
+                    <span>Màn hình: 5.2", Full HD</span>
+                    <span>HĐH: Android 7.0</span>
+                    <span>CPU: Snapdragon 820 4 nhân</span>
+                    <span>RAM: 4 GB, ROM: 64 GB</span>
+                    <span>Camera: 19 MP, Selfie: 13 MP</span>
+                    <span>PIN: 2900 mAh</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;92082&#39;,&#39;42&#39;,&#39;Sony Xperia XZs&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/dtdd/huawei-gr5-2017">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/huawei-gr5-2017-ft-1-400x400.jpg" data-original="https://cdn1.tgdd.vn/Products/Images/42/89161/Feature/huawei-gr5-2017-ft-1-400x400.jpg" class="lazy" style="display: block;">
+                    <h3>HUAWEI GR5 2017</h3>
+                    <strong>5.990.000₫</strong>
+                    <label class="installment">Trả góp 0%</label>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">HUAWEI GR5 2017</span>
+                    <strong>5.990.000₫</strong>
+                    <div class="promotion">
+                        <span>Tặng PMH 300,000đ HOẶC Trả góp 0%</span>
+                    </div>
+                    <span>Màn hình: 5.5", Full HD</span>
+                    <span>HĐH: Android 6.0 (Marshmallow)</span>
+                    <span>CPU: HiSilicon Kirin 655 8 nhân</span>
+                    <span>RAM: 3GB, ROM: 32GB</span>
+                    <span>Camera kép: 12+2 MP, Selfie: 8MP</span>
+                    <span>PIN: 3340 mAh, SIM: 2 SIM</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;89161&#39;,&#39;42&#39;,&#39;HUAWEI GR5 2017&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/may-tinh-bang/samsung-galaxy-tab-e-96-sm-t561">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/samsung-galaxy-tab-e-96-sm-t561-1-400x400.png" data-original="https://cdn.tgdd.vn/Products/Images/522/73280/Feature/samsung-galaxy-tab-e-96-sm-t561-1-400x400.png" class="lazy" style="display: block;">
+                    <h3>Samsung Galaxy Tab E 9.6 (SM-T561)</h3>
+                    <strong>4.990.000₫</strong>
+                    <label class="installment">Trả góp 0%</label>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Samsung Galaxy Tab E 9.6 (SM-T561)</span>
+                    <strong>4.990.000₫</strong>
+                    <div class="promotion">
+                        <span>Cơ hội trúng 88 triệu mỗi ngày</span>
+                        <span>Tặng PMH 150,000đ HOẶC Trả góp 0%</span>
+                    </div>
+                    <span>Màn hình: 9.6", WXGA TFT</span>
+                    <span>CPU: Spreadtrum, Android 4.4</span>
+                    <span>RAM: 1.5 GB, Bộ nhớ: 8 GB</span>
+                    <span>Camera: 5 MP, Selfie 2 MP</span>
+                    <span>Kết nối: 3G, nghe gọi </span>
+                    <span>PIN: 5000 mAh, SIM: 1 SIM</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;73280&#39;,&#39;522&#39;,&#39;Samsung Galaxy Tab E 9.6 (SM-T561)&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/laptop/lenovo-ideapad-100s">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/lenovo-ideapad-100s-400x400.png" data-original="https://cdn3.tgdd.vn/Products/Images/44/75558/Feature/lenovo-ideapad-100s-400x400.png" class="lazy" style="display: block;">
+                    <h3>Lenovo IdeaPad 100S 11IBY Z3735/2GB/32GB/Win10</h3>
+                    <strong>3.990.000₫</strong>
 
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Home Decor</a>
-                                <ul>
-                                    <li><a href="#">Flowers & Plants</a></li>
-                                    <li><a href="#">Home Fragrances</a></li>
-                                    <li><a href="#">Spiritual Decor</a></li>
-                                    <li><a href="#">Wall Decor</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Gardening Tools</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Office Supplies</a>
-                        <ul>
-                            <li>
-                                <a href="#">Books</a>
-                                <ul>
-                                    <li><a href="#">Academic & Professional</a></li>
-                                    <li><a href="#">Entrance Exam</a></li>
-                                    <li><a href="#">Literature & Fiction</a></li>
-                                    <li><a href="#">Children & Teens</a></li>
-                                    <li><a href="#">Indian Writing</a></li>
-                                    <li><a href="#">New Releases</a></li>
-                                    <li><a href="#">Bestsellers</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Stationery</a>
-                                <ul>
-                                    <li><a href="#">Pens</a></li>
-                                    <li><a href="#">Calculators</a></li>
-                                    <li><a href="#">College Supplies</a></li>
-                                    <li><a href="#">Art Supplies</a></li>
-                                    <li><a href="#">Diaries & Notebooks</a></li>
-                                    <li><a href="#">Gifting</a></li>
-                                </ul>
-                            </li>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Lenovo IdeaPad 100S 11IBY Z3735/2GB/32GB/Win10</span>
+                    <strong>3.990.000₫</strong>
+                    <div class="promotion">
+                        <span>Cơ hội trúng xe SH125i</span>
+                        <span>Tặng Bình giữ nhiệt (Nếu không có quà sẽ hoàn 75,000đ)</span>
+                    </div>
+                    <span>Màn hình: 11.6 inch, HD</span>
+                    <span>CPU: Atom, 1.33 GHz</span>
+                    <span>RAM: 2 GB, Ổ cứng eMMC: 32 GB</span>
+                    <span>Đồ họa: Intel® HD Graphics</span>
+                    <span>HĐH: Windows 10, Không DVD</span>
+                    <span>Nặng 1 kg, PIN 2 cell</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;75558&#39;,&#39;44&#39;,&#39;Lenovo IdeaPad 100S 11IBY Z3735/2GB/32GB/Win10&#39;)">So sánh với</label>
+                </figure>
+            </li>
+            <li>
+                <a href="https://www.t2lmobile.com/laptop/apple-macbook-air-2015-mmgf2zp-a-i5-5250u-8gb-128g">
+                    <img width="388" height="180" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/apple-macbook-air-2015-mmgf2zp-a-i5-5250u-8gb-128g-400x400.png" data-original="https://cdn2.tgdd.vn/Products/Images/44/76987/Feature/apple-macbook-air-2015-mmgf2zp-a-i5-5250u-8gb-128g-400x400.png" class="lazy" style="display: block;">
+                    <h3>Apple Macbook Air MMGF2ZP/A i5 5250U/8GB/128GB</h3>
+                    <strong>23.990.000₫</strong>
 
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Sports Equipment</a>
-                        <ul>
-                            <li>
-                                <a href="#">Fitness</a>
-                                <ul>
-                                    <li><a href="#">Yoga Mats</a></li>
-                                    <li><a href="#">Gym Gloves</a></li>
-                                    <li><a href="#">Ab Exercisers</a></li>
-                                    <li><a href="#">Gym Balls</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Indoor Sports</a>
-                                <ul>
-                                    <li><a href="#">Chess</a></li>
-                                    <li><a href="#">Darts</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Team Sports</a>
-                                <ul>
-                                    <li><a href="#">Basketball</a></li>
-                                    <li><a href="#">Cricket</a></li>
-                                    <li><a href="#">Football</a></li>
-                                    <li><a href="#">VolleyBall</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Racquet Sports</a>
-                                <ul>
-                                    <li><a href="#">Badminton</a></li>
-                                    <li><a href="#">Squash</a></li>
-                                    <li><a href="#">Table Tennis</a></li>
-                                    <li><a href="#">Tennis</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <span class="left-ribbon"> </span>
-                <span class="right-ribbon"> </span>
+                </a>
+                <figure class="bginfo">
+                    <span class="name">Apple Macbook Air MMGF2ZP/A i5 5250U/8GB/128GB</span>
+                    <strong>23.990.000₫</strong>
+                    <div class="promotion">
+                        <span>Tặng Balo t2lmobile (Nếu không có quà sẽ hoàn 100,000đ)</span>
+                        <span>Trả góp 0% với HSBC HOẶC Tặng PMH 500,000đ</span>
+                    </div>
+                    <span>Màn hình: 13.3”, 1440x900</span>
+                    <span>CPU: Intel Core i5, 1.6GHz</span>
+                    <span>RAM: 8GB/ SSD: 128GB</span>
+                    <span>VGA: Intel HD Graphics 6000</span>
+                    <span>HĐH: MAC OS X</span>
+                    <span>Pin: Khoảng 12 tiếng/ DVD: Không</span>
+                    <label class="compr" onclick="qcp_addProdQcp(&#39;76987&#39;,&#39;44&#39;,&#39;Apple Macbook Air MMGF2ZP/A i5 5250U/8GB/128GB&#39;)">So sánh với</label>
+                </figure>
+            </li>
+        </ul>
+
+        <!-- phu kien -->
+
+        <div class="acchome">
+            <div class="naviacc">
+                <h2>Phụ kiện giá rẻ</h2>
+                <a href="https://www.t2lmobile.com/op-lung-dien-thoai">Ốp lưng, bao da</a>
+                <a href="https://www.t2lmobile.com/sac-dtdd">Pin sạc dự phòng</a>
+                <a href="https://www.t2lmobile.com/cap-dien-thoai">Cáp sạc</a>
+                <a href="https://www.t2lmobile.com/the-nho">Thẻ nhớ</a>
+                <a href="https://www.t2lmobile.com/tai-nghe">Tai nghe</a>
+                <a href="https://www.t2lmobile.com/gay-tu-suong">Gậy tự sướng</a>
+                <a href="https://www.t2lmobile.com/usb">USB</a>
+                <a href="https://www.t2lmobile.com/chuot-may-tinh">Chuột</a>
+                <a href="https://www.t2lmobile.com/loa-laptop">Loa</a>
+                <a href="https://www.t2lmobile.com/phu-kien-khac">Phụ kiện khác</a>
             </div>
-            <div class="header_bottom">
-                <div class="slider-text">
-                    <h2>Lorem Ipsum Placerat <br />Elementum Quistue Tunulla Maris</h2>
-                    <p>Vivamus vitae augue at quam frigilla tristique sit amet<br /> acin ante sikumpre tisdin.</p>
-                    <a href="#">Sitamet Tortorions</a>
-                </div>
-                <div class="slider-img">
-                    <img src="images/slider-img.png" alt="" />
-                </div>
-                <div class="clear"></div>
-            </div>
+            <ul>
+                <li>
+                    <a href="https://www.t2lmobile.com/sac-dtdd/pin-sac-du-phong-besiter-5000-mah-bst-0129">
+                        <img width="120" height="120" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/pin-sac-du-phong-besiter-5000-mah-bst-0129-200x200.jpg" data-original="https://cdn1.tgdd.vn/Products/Images/57/85006/pin-sac-du-phong-besiter-5000-mah-bst-0129-200x200.jpg" class="lazy" style="display: block;">
+                        <h3>Pin sạc dự phòng Besiter 5.000 mAh BST-0129</h3>
+                        <strong>138.000₫</strong>
+                        <span>230.000₫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/sac-dtdd/pin-sac-du-phong-esaver-10000-mah-y105">
+                        <img width="120" height="120" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/pin-sac-du-phong-esaver-10000-mah-y105-200x200.jpg" data-original="https://cdn1.tgdd.vn/Products/Images/57/80771/pin-sac-du-phong-esaver-10000-mah-y105-200x200.jpg" class="lazy" style="display: block;">
+                        <h3>Pin sạc dự phòng eSaver 10.000 mAh Y105</h3>
+                        <strong>210.000₫</strong>
+                        <span>300.000₫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/loa-laptop/loa-bluetooth-icutes-mb-m815-hinh-tho">
+                        <img width="120" height="120" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/loa-bluetooth-icutes-mb-m815-hinh-tho-8-200x200.jpg" data-original="https://cdn3.tgdd.vn/Products/Images/382/88953/loa-bluetooth-icutes-mb-m815-hinh-tho-8-200x200.jpg" class="lazy" style="display: block;">
+                        <h3>Loa Bluetooth iCutes MB-M815 Hình Thỏ</h3>
+                        <strong>210.000₫</strong>
+                        <span>300.000₫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/loa-laptop/loa-bluetooth-icutes-mb-m615-mat-cuoi-sweet">
+                        <img width="120" height="120" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/loa-bluetooth-icutes-mb-m615-mat-cuoi-sweet-9-200x200.jpg" data-original="https://cdn3.tgdd.vn/Products/Images/382/88233/loa-bluetooth-icutes-mb-m615-mat-cuoi-sweet-9-200x200.jpg" class="lazy" style="display: block;">
+                        <h3>Loa Bluetooth iCutes MB-M615 Mặt cười Sweet</h3>
+                        <strong>210.000₫</strong>
+                        <span>300.000₫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/the-nho-dien-thoai/the-nho-microsd-8gb-class-4">
+                        <img width="120" height="120" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/the-nho-microsd-8gb-class-4-8-200x200.jpg" data-original="https://cdn2.tgdd.vn/Products/Images/55/69972/the-nho-microsd-8gb-class-4-8-200x200.jpg" class="lazy" style="display: block;">
+                        <h3>Thẻ nhớ Micro SD 8 GB Class 4</h3>
+                        <strong>200.000₫</strong>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/tai-nghe/tai-nghe-ep-xmobile-ep-m4">
+                        <img width="120" height="120" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/tai-nghe-ep-xmobile-ep-m4-den-do-avatar-200x200.jpg" data-original="https://cdn2.tgdd.vn/Products/Images/54/85142/tai-nghe-ep-xmobile-ep-m4-den-do-avatar-200x200.jpg" class="lazy" style="display: block;">
+                        <h3>Tai nghe nhét trong Xmobile EP-M4</h3>
+                        <strong>60.000₫</strong>
+                        <span>100.000₫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/tai-nghe/tai-nghe-ep-xmobile-ep-04-a">
+                        <img width="120" height="120" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/tai-nghe-ep-xmobile-ep-04-a-new-200x200.jpg" data-original="https://cdn4.tgdd.vn/Products/Images/54/82899/tai-nghe-ep-xmobile-ep-04-a-new-200x200.jpg" class="lazy" style="display: block;">
+                        <h3>Tai nghe nhét trong Xmobile EP-04 A</h3>
+                        <strong>60.000₫</strong>
+                        <span>100.000₫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.t2lmobile.com/cap-dien-thoai/cap-audio-35mm-1m-esaver-ds125-tb-den">
+                        <img width="120" height="120" src="./t2lmobile.com - Siêu thị điện thoại, Tablet, Laptop, Phụ kiện chính hãng_files/cap-audio-35mm-1m-esaver-ds125-tb-den-11-200x200.jpg" data-original="https://cdn2.tgdd.vn/Products/Images/58/86802/cap-audio-35mm-1m-esaver-ds125-tb-den-11-200x200.jpg" class="lazy" style="display: block;">
+                        <h3>Dây cáp âm thanh 3.5 mm 1 m eSaver DS125-TB</h3>
+                        <strong>40.000₫</strong>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <!------------End Header ------------>
-    <div class="main">
-        <div class="content">
-            <div class="content_top">
-                <div class="wrap">
-                    <h3>Latest Products</h3>
+
+        <!--#region Tiện ích-->
+        <div class="wrap_card">
+            <aside class="mobile_card">
+                <h3>Mua mã thẻ cào điện thoại</h3>
+
+                <div class="clr"></div>
+                <div id="content_1" class="content">
+                    <form>
+                        <label onclick="ChangePrice(this)" data-max="5" data-value="50000" data-price="50000"><i class="icontgdd-opt"></i>&nbsp;50.000</label>
+                        <label onclick="ChangePrice(this)" data-max="5" data-value="100000" data-price="98000" class="check"><i class="icontgdd-opt"></i>&nbsp;100.000</label>
+                        <label onclick="ChangePrice(this)" data-max="2" data-value="200000" data-price="196000"><i class="icontgdd-opt"></i>&nbsp;200.000</label>
+                        <label onclick="ChangePrice(this)" data-max="1" data-value="500000" data-price="490000"><i class="icontgdd-opt"></i>&nbsp;500.000</label>
+                        <div class="wrapchoose">
+                            <div class="choosenum">1 thẻ </div>
+                            <div class="numcard">
+                                <a href="javascript:void(0)" data-value="1">1 thẻ</a>
+                                <a href="javascript:void(0)" data-value="2">2 thẻ</a>
+                                <a href="javascript:void(0)" data-value="3">3 thẻ</a>
+                                <a href="javascript:void(0)" data-value="4">4 thẻ</a>
+                                <a href="javascript:void(0)" data-value="5">5 thẻ</a>
+                            </div>
+                            <div class="money">Thành tiền: <span>98.000đ</span></div>
+                            <span id="warningprice" class="warning error"></span>
+                        </div>
+                        <div class="area_input">
+                            <input type="tel" class="numberphone" id="txtPhone" name="txtPhone" placeholder="Nhập số ĐT nhận mã thẻ" maxlength="11" onkeyup="checkAllCaseCard();">
+                            <input type="email" class="emailcustom" placeholder="Nhập email nhận mã thẻ" id="txtEmail" name="txtEmail" maxlength="100" style="display: none;">
+                            <input type="hidden" name="iQuantity" id="iQuantity" value="1">
+                        </div>
+                        <div class="area_btn">
+                            <button type="button" class="btndis" id="btnCardATM" data-value="4">
+                                DÙNG THẺ ATM<br>
+                                Có internet Banking
+                            </button>
+                            <button type="button" class="btndis" id="btnCardVISA" data-value="5">
+                                DÙNG THẺ VISA<br>
+                                MASTER
+                            </button>
+                        </div>
+                        <span id="warningphone" class="warning error"></span>
+                    </form>
                 </div>
-                <div class="line"> </div>
-                <div class="wrap">
-                    <div class="ocarousel_slider">
-                        <div class="ocarousel example_photos" data-ocarousel-perscroll="3">
-                            <div class="ocarousel_window">
-                                <a href="#" title="img1"> <img src="images/latest-product-img1.jpg" alt="" /><p>Nuncvitae</p></a>
-                                <a href="#" title="img2"> <img src="images/latest-product-img2.jpg" alt="" /><p>Suspendiss</p></a>
-                                <a href="#" title="img3"> <img src="images/latest-product-img3.jpg" alt="" /><p>Phasellus ferm</p></a>
-                                <a href="#" title="img4"> <img src="images/latest-product-img4.jpg" alt="" /><p>Veldignissim</p></a>
-                                <a href="#" title="img5"> <img src="images/latest-product-img5.jpg" alt="" /><p>Aliquam interd</p></a>
-                                <a href="#" title="img6"> <img src="images/latest-product-img6.jpg" alt="" /><p>Sapien lectus</p></a>
-                                <a href="#" title="img1"> <img src="images/latest-product-img1.jpg" alt="" /><p>Nuncvitae</p></a>
-                                <a href="#" title="img2"> <img src="images/latest-product-img2.jpg" alt="" /><p>Suspendiss</p></a>
-                                <a href="#" title="img3"> <img src="images/latest-product-img3.jpg" alt="" /><p>Phasellus ferm</p></a>
-                                <a href="#" title="img4"> <img src="images/latest-product-img4.jpg" alt="" /><p>Veldignissim</p></a>
-                                <a href="#" title="img5"> <img src="images/latest-product-img5.jpg" alt="" /><p>Aliquam interd</p></a>
-                                <a href="#" title="img6"> <img src="images/latest-product-img6.jpg" alt="" /><p>Sapien lectus</p></a>
+            </aside>
+            <aside class="pay_installment">
+                <h3>Đóng tiền trả góp</h3>
+                <div id="content_2" class="content">
+                    <form>
+                        <div class="row_comp">
+                            <div class="choosecomp">
+                                <text>Chọn công ty</text>
                             </div>
-                            <span>
-                                <a href="#" data-ocarousel-link="left" style="float: left;" class="prev"> </a>
-                                <a href="#" data-ocarousel-link="right" style="float: right;" class="next"> </a>
-                            </span>
+                            <div class="listcomp">
+                                <a data-value="1">ACS</a>
+                                <a data-value="2">HOMECREDIT</a>
+                                <a data-value="3">FECREDIT</a>
+                                <a data-value="4">HDSAISON</a>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row_input">
+                            <input name="ddlInstallment" id="ddlInstallment" type="hidden" value="4">
+                            <input autocomplete="off" type="text" id="txtHDCode" name="txtHDCode" class="code" placeholder="Nhập mã hợp đồng">
+                            <div id="idWarningTraGop" class="hdtragop warning error"></div>
+                        </div>
+                        <button type="button" class="btncheck">Kiểm tra</button>
+                    </form>
                 </div>
-            </div>
-            <div class="content_bottom">
-                <div class="wrap">
-                    <div class="content-bottom-left">
-                        <div class="categories">
-                            <ul>
-                                <h3>Browse All Categories</h3>
-                                <li><a href="#">Appliances</a></li>
-                                <li><a href="#">Sports Equipments</a></li>
-                                <li><a href="#">Computers & Electronics</a></li>
-                                <li><a href="#">Office supplies</a></li>
-                                <li><a href="#">Health & Beauty</a></li>
-                                <li><a href="#">Home & Garden</a></li>
-                                <li><a href="#">Apparel</a></li>
-                                <li><a href="#">Toys & Games</a></li>
-                                <li><a href="#">Automotive</a></li>
-                            </ul>
-                        </div>
-                        <div class="buters-guide">
-                            <h3>Buyers Guide</h3>
-                            <p><span>We want you to be happy with your purchase.</span></p>
-                            <p>So we're committed to giving you all the tools to make the right decision with minimum fuss. </p>
-                        </div>
-                        <div class="add-banner">
-                            <img src="images/camera.png" alt="" />
-                            <div class="banner-desc">
-                                <h4>Electronics</h4>
-                                <a href="#">More Info</a>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="add-banner add-banner2">
-                            <img src="images/computer.png" alt="" />
-                            <div class="banner-desc">
-                                <h4>Computers</h4>
-                                <a href="#">More Info</a>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-
-                    <div class="content-bottom-right">
-                        <h3>Browse All Categories</h3>
-                        <div class="section group">
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img1.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img2.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img3.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img4.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section group">
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img1.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img2.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img3.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img4.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section group">
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img1.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img2.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img3.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-
-                            </div>
-                            <div class="grid_1_of_4 images_1_of_4">
-                                <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
-                                <a href="preview.html"><img src="images/product-img4.jpg" alt="" /></a>
-                                <div class="price-details">
-                                    <div class="price-number">
-                                        <p><span class="rupees">$839.93 </span></p>
-                                    </div>
-                                    <div class="add-cart">
-                                        <h4><a href="preview.html">More Info</a></h4>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-articles">
-                            <h3>Browse All Categories</h3>
-                            <ul>
-                                <li>
-                                    <div class="article">
-                                        <p><span>Aenean vitae massa dolor</span></p>
-                                        <p>Phasellus in quam dui. Nunc ornare, tellus rutrum porttitor imperdiet, dui leo molestie nisl, sit amet dignissim nibh magna pharetra quam. Nunc ultrices pellentesque massa, ac adipiscing dui rutrum id. In cursus augue non erat faucibus eu condimentum dolor molestie.</p>
-                                        <p><a href="#">+ Read Full article</a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="article">
-                                        <p><span>Phasellus sollicitudin consectetur</span></p>
-                                        <p>Cras aliquam, odio ac consectetur tincidunt, eros nunc fermentum augue, quis rutrum ante lectus ac lectus. Fusce sed tellus orci, et feugiat urna. Integer et dictum leo. Nulla consectetur tempus orci sed consequat. Mauris cursus est a sapien venenatis faucibus. Etiam sagittis convallis volutpat.</p>
-                                        <p><a href="#">+ Read Full article</a></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
+                <div class="helplink">
+                    <span>Hướng dẫn xem mã khách hàng:</span>
+                    <a href="https://www.t2lmobile.com/tien-ich/thanh-toan-tra-gop?n=ppf">Home Credit</a>
+                    <a href="https://www.t2lmobile.com/tien-ich/thanh-toan-tra-gop?n=vpbank">• FE Credit/VPBank</a>
+                    <a href="https://www.t2lmobile.com/tien-ich/thanh-toan-tra-gop?n=acs">• ACS</a>
+                    <a href="https://www.t2lmobile.com/tien-ich/thanh-toan-tra-gop?n=hdsaison">• HD SaiSon</a>
                 </div>
-            </div>
+            </aside>
         </div>
-    </div>
-    <div class="footer">
-        <div class="wrap">
-            <div class="copy_right">
-                <p>Copy rights (c). All rights Reseverd | Template by  <a href="http://w3layouts.com" target="_blank">W3Layouts</a> </p>
-            </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="#">Terms of Use</a> : </li>
-                    <li><a href="#">Privacy Policy</a> : </li>
-                    <li><a href="contact.html">Contact Us</a> : </li>
-                    <li><a href="#">Sitemap</a></li>
-                </ul>
-            </div>
+        <!--#endregion-->
+        <div class="moreproduct">
+            <a href="https://www.t2lmobile.com/khuyen-mai">Khuyến mãi tháng 5</a>
+            <a href="https://www.t2lmobile.com/dtdd">
+                <span>184</span>
+                điện thoại
+            </a>
+            <a href="https://www.t2lmobile.com/may-tinh-bang">
+                <span>25</span>
+                máy tính bảng
+            </a>
+            <a href="https://www.t2lmobile.com/laptop">
+                <span>84</span>
+                laptop
+            </a>
+            <a href="https://www.t2lmobile.com/phu-kien">
+                <span>3.597</span>
+                phụ kiện
+            </a>
+            <a href="https://www.t2lmobile.com/may-doi-tra">
+                <span>100.892</span>
+                máy đã sử dụng
+            </a>
         </div>
+        <div class="clr"></div>
+    </section>
+    <div class="keyword">
+        <span>Tìm kiếm nhiều: </span>
+        <a href="https://www.t2lmobile.com/dtdd/oppo-f1s-2017">• OPPO F1s [17] 64GB</a>
+        <a href="https://www.t2lmobile.com/dtdd/oppo-f3-plus">• OPPO F3 Plus</a>
+        <a href="https://www.t2lmobile.com/dtdd-xiaomi">• Xiaomi Chính Hãng</a>
+        <a href="https://www.t2lmobile.com/dtdd/galaxy-a5-2017">• Galaxy A5 2017</a>
+        <a href="https://www.t2lmobile.com/dtdd/samsung-galaxy-a7-2017">• Galaxy A7 2017</a>
+        <a href="https://www.t2lmobile.com/dtdd/samsung-galaxy-j5-prime">• Galaxy J5 Prime</a>
     </div>
+
+    <header>
+        <div class="wrap-main">
+            <a class="logo" title="Về trang chủ t2lmobile.com" href="https://www.t2lmobile.com/">
+               <img src="~/Images/logot2l.png" />
+            </a>
+            <form id="search-site" action="#" method="get" onsubmit="return submitSearchForm();" autocomplete="off">
+                <input class="topinput" id="search-keyword" name="key" type="text" placeholder="Bạn cần tìm..." autocomplete="off" onkeyup="SuggestSearch(event,this, 0);" maxlength="50">
+                <button class="btntop" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <nav>
+                <a href="#" class="mobile" title="Điện thoại di động, smartphone">
+                   Điện thoại
+                </a>
+                <a href="#" class="tablet" title="Máy tính bảng, tablet">
+                    Tablet
+                </a>
+                <a href="#" class="laptop" title="Máy tính xách tay, Laptop">
+                    Laptop
+                </a>
+                <a href="#" class="phukien" title="Phụ kiện điện thoại di động, phụ kiện tablet, phụ kiện lapto">
+                    Phụ kiện
+                </a>
+                
+                <a href="#" class="simcard" title="Sim số, thẻ cào">
+                    <i class="icontgdd-simcard"></i>Sim, thẻ
+                </a>
+               
+            </nav>
+        </div>
+        <div class="clr"></div>
+    </header>
+
+
+    <footer>
+        <div class="rowfoot1">
+            <ul class="colfoot">
+                <li><a href="https://www.t2lmobile.com/tra-gop" title="Hướng dẫn mua trả góp">Tìm hiểu về mua trả góp</a></li>
+                <li><a href="https://www.t2lmobile.com/bao-hanh" title="Tìm trung tâm bảo hành">Tìm trung tâm bảo hành hãng</a></li>
+                <li><a href="https://www.t2lmobile.com/chinh-sach-bao-hanh-san-pham" title="Chính sách đổi trả">Chính sách đổi trả</a></li>
+                <li><a href="https://www.t2lmobile.com/giao-hang" title="Giao hàng &amp; Thanh toán">Giao hàng &amp; Thanh toán</a></li>
+                <li class="showmore"><a href="javascript:ShowMoreFooterSupportLink()" title="Xem thêm">Xem thêm</a></li>
+                <li class="hidden"><a href="https://www.t2lmobile.com/huong-dan-mua-hang" title="Hướng dẫn mua online">Hướng dẫn mua online</a></li>
+                <li class="hidden"><a href="https://www.t2lmobile.com/b2b" title="Mua hàng doanh nghiệp">Bán hàng doanh nghiệp</a></li>
+                <li class="hidden"><a href="https://www.t2lmobile.com/phieu-mua-hang" title="Phiếu mua hàng">Phiếu mua hàng</a></li>
+                <li class="hidden"><a href="https://hddt.t2lmobile.com/" target="_blank" title="In hóa đơn điện tử" rel="nofollow">In hóa đơn điện tử</a></li>
+                <li class="hidden"><a href="https://www.t2lmobile.com/tos" title="Quy chế hoạt động">Quy chế hoạt động</a></li>
+                <li class="hidden"><a href="https://www.t2lmobile.com/noi-quy-cua-hang" title="Nội quy cửa hàng">Nội quy cửa hàng</a></li>
+                <li class="hidden"><a href="https://www.t2lmobile.com/chat-luong-phuc-vu" title="Chất lượng phục vụ">Chất lượng phục vụ</a></li>
+                <li class="hidden"><a href="https://www.t2lmobile.com/trao-thuong" title="Thông tin trao thưởng">Thông tin trao thưởng</a></li>
+            </ul>
+            <ul class="colfoot">
+                <li><a href="http://mwg.vn/" target="_blank" title="Giới thiệu công ty (mwg.vn)">Giới thiệu công ty <span>(mwg.vn)</span></a></li>
+                <li><a href="https://vieclam.t2lmobile.com/" target="_blank" title="Tuyển dụng">Tuyển dụng</a></li>
+                <li><a href="https://www.t2lmobile.com/lien-he" title="Gửi góp ý, khiếu nại">Gửi góp ý, khiếu nại</a></li>
+                <li><a href="https://www.t2lmobile.com/he-thong-sieu-thi-the-gioi-di-dong" title="Tìm siêu thị (1374  shop)">Tìm siêu thị <span>(1374 shop)</span></a></li>
+                <li>
+                    <a class="viewmb" rel="nofollow" href="javascript:window.location.href=&#39;/?sclient=mobile&#39;" title="Xem bản mobile">Xem bản mobile</a>
+                </li>
+            </ul>
+            <ul class="colfoot">
+                <li>
+                    <p>Gọi mua hàng <a href="tel:18001060">1800.1060</a> (7:30 - 22:00)</p>
+                    <p>Gọi khiếu nại <a href="tel:18001062">1800.1062</a> (8:00 - 21:30)</p>
+                    <p>Gọi bảo hành<a href="tel:18001064">1800.1064</a> (8:00 - 21:00)</p>
+                </li>
+            </ul>
+            <ul class="colfoot collast">
+                <li><a target="_blank" href="https://facebook.com/t2lmobilecom" class="linkfb"><i class="icontgdd-share1"></i>2.6tr</a> <a target="_blank" href="https://www.youtube.com/user/TGDDVideoReviews?sub_confirmation=1" class="linkyt"><i class="icontgdd-share3"></i>159.2k</a> <a target="_blank" href="https://www.dienmayxanh.com/" class="dmx"><i class="icontgdd-dmx"></i></a><a target="_blank" rel="nofollow" class="bct" href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=20098"><i class="icontgdd-bct"></i></a></li>
+            </ul>
+        </div>
+        <div class="rowfoot2">
+            <p>Copyright © 2017.  Đồ án tích hợp hệ thống COST</a></p>
+        </div>
+    </footer>
+    @*script chạy slider*@
     <script type="text/javascript">
-		$(document).ready(function() {
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
-		});
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                effect: 'random',
+                slices: 15,
+                boxCols: 8,
+                boxRows: 4,
+                animSpeed: 500,
+                pauseTime: 3000,
+                startSlide: 0,
+                directionNav: true,
+                controlNav: false,
+                controlNavThumbs: false,
+                pauseOnHover: true,
+                manualAdvance: false,
+                prevText: '',
+                nextText: '',
+                randomStart: false,
+                beforeChange: function () { },
+                afterChange: function () { },
+                slideshowEnd: function () { },
+                lastSlide: function () { },
+                afterLoad: function () { }
+            });
+        });
     </script>
-    <a href="#" id="toTop"> </a>
-    <script type="text/javascript" src="js/navigation.js"></script>
 </body>
 </html>
